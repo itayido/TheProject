@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Secular+One&display=swap");
+* {
+  font-size: 30px;
+  font-family: heebo;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  margin: 5;
+}
+h1 {
+  font-size: 45px;
+  align-content: center;
+}
+.form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+}
+/* font-family: ;
+font-family:Secular One; */
