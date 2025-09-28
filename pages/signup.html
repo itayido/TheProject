@@ -3,20 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" />
+    <title>Sign Up</title>
   </head>
   <body>
     <main>
-      <form action="" class="form" method="post">
+      <form class="form" method="post">
+        <div class="form-part" id="title">Sign Up</div>
         <div class="form-part">
-          <label for="name">שם :</label>
-          <input id="name" name="name" minlength="2" maxlength="20" />
+          <label for="username">Username:</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            minlength="2"
+            maxlength="20"
+            required
+          />
         </div>
 
         <div class="form-part">
-          <label for="lname">שם משפחה :</label>
-          <input id="lname" name="lname" minlength="2" maxlength="20" />
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            minlength="2"
+            maxlength="20"
+            required
+          />
         </div>
+
+        <div class="form-part">
+          <label for="password">Confirm Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </div>
+        <button id="reset" type="reset">Reset</button>
+        <button id="submit" type="submit">Login</button>
       </form>
     </main>
   </body>

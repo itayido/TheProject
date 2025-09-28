@@ -1,12 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Secular+One&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Secular+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+#title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightpink;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+}
+
+.form-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.form-part label {
+  font-weight: bold;
+  font-size: 16px;
+}
+#submit {
+  background-color: green;
+  padding: 5px;
+  margin: 5px;
+}
+#reset {
+  background-color: red;
+  padding: 5px;
+  margin: 5px;
+}
 /* font-family: heebo;
 font-family:Secular One; */
-

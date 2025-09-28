@@ -3,7 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../index.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <form class="form" method="post">
+        <div class="form-part" id="title">Login</div>
+        <div class="form-part">
+          <label for="username">Username:</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </div>
+
+        <div class="form-part">
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </div>
+        <button id="reset" type="reset">Reset</button>
+        <button id="submit" type="submit">Login</button>
+      </form>
+    </main>
+  </body>
 </html>
