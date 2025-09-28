@@ -44,15 +44,26 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+
+input {
+  padding: 5px;
+}
+
 #submit {
-  background-color: green;
+  background-color: rgb(86, 240, 86);
   padding: 5px;
   margin: 5px;
 }
+
 #reset {
-  background-color: red;
+  background-color: rgb(252, 60, 60);
   padding: 5px;
   margin: 5px;
+}
+
+#account {
+  text-align: center;
+  font-size: 15px;
 }
 /* font-family: heebo;
 font-family:Secular One; */
