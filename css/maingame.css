@@ -17,6 +17,10 @@ body {
   font-size: 40px;
   color: white;
 }
+#name {
+  text-align: left;
+  
+}
 .board {
   display: flex;
   flex-wrap: wrap;

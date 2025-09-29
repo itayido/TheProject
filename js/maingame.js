@@ -77,6 +77,5 @@ function guess() {
     });
   }
 }
-let name = localStorage.getItem()
 createBoard();
 guess();
