@@ -21,7 +21,7 @@ function show(c) {
       }
       setTimeout(() => {
         cardArr[j].textContent = " ";
-        cardArr[j].style.background = "rgb(126, 196, 94)";
+        cardArr[j].style.background = "rgb(126, 181, 192)";
       }, 500 * c * 0.5);
     }
   }
@@ -40,7 +40,7 @@ function guess() {
       cardArr[i].textContent = cardArr[i].dataset.number;
 
       if (parseInt(cardArr[i].dataset.number) === index) {
-        cardArr[i].style.background = "green";
+        cardArr[i].style.background = "rgba(58, 249, 6, 1)";
         index++;
 
         if (index > round) {
@@ -58,7 +58,7 @@ function guess() {
 
           setTimeout(() => {
             cardArr.forEach((card) => {
-              card.style.background = "rgb(126, 196, 94)";
+              card.style.background = "rgb(126, 181, 192)";
               card.textContent = " ";
             });
           }, 300);
@@ -66,7 +66,7 @@ function guess() {
           setTimeout(() => show(round), 1000);
         }
       } else {
-        cardArr[i].style.background = "red";
+        cardArr[i].style.background = "rgba(224, 33, 33, 1)";
         let message = document.querySelector(".status");
         message.innerHTML = `You Lost! Try Again <br> <button id="playAgain" type="button">Ok</button>`;
         document
@@ -77,6 +77,6 @@ function guess() {
     });
   }
 }
-
+let name = localStorage.getItem()
 createBoard();
 guess();
