@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  border: black solid 3px;
+  border-radius: 8px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  border: black solid 1px;
+  font-size: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  margin-top: 10px;
+}
