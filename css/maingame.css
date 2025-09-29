@@ -3,10 +3,7 @@
 * {
   box-sizing: border-box;
 }
-h1 {
-  font-size: 110px;
-  margin-bottom: 0;
-}
+
 body {
   display: flex;
   flex-direction: column;
@@ -17,9 +14,16 @@ body {
   font-size: 40px;
   color: white;
 }
+.userData {
+  display: flex;
+}
 #name {
   text-align: left;
-  
+  align-content: flex-start;
+}
+h1 {
+  font-size: 110px;
+  margin-bottom: 0;
 }
 .board {
   display: flex;
@@ -30,7 +34,7 @@ body {
   justify-content: center;
   border: rgb(126, 181, 192) solid 3px;
   box-shadow: 0 8px 10px rgb(126, 181, 192);
-  border-radius: 8px;
+  border-radius: 20px;
   margin: 80px;
 }
 
@@ -42,17 +46,18 @@ body {
   width: 150px;
   background-color: rgb(126, 181, 192);
   margin: 20px;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 50px;
   text-align: center;
 }
 
 .status {
-  margin-top: 50px;
-  width: 800px;
+  width: 55vw;
   height: 200px;
-  box-shadow: 0 8px 10px rgb(126, 181, 192);
-  border-radius: 8px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 60px;
 }
 button {
   background-color: rgb(126, 181, 192);
@@ -78,4 +83,20 @@ ul,
 ol {
   font-size: 30px;
   margin: 10px;
+}
+.custom-button {
+  background-color: white;
+  color: red;
+  font-size: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+}
+.custom-button1 {
+  background-color: white;
+  color: rgb(85, 255, 0);
+  font-size: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
 }

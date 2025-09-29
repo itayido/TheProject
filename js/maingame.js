@@ -49,7 +49,9 @@ function guess() {
 
           if (round === 16) {
             let message = document.querySelector(".status");
-            message.innerHTML = `You won! <br> <button id="playAgain" type="button">Ok</button>`;
+            message.innerHTML = `You won! <br> <button class="custom-button1" id="playAgain" type="button">Ok</button>`;
+            document.getElementsByClassName("status")[0].style.background = "rgba(112, 224, 33, 1)";
+        document.getElementsByClassName("status")[0].style.boxShadow = "0 8px 10px rgba(111, 255, 0, 1)";
             document
               .querySelector("#playAgain")
               .addEventListener("click", () => location.reload());
@@ -68,7 +70,10 @@ function guess() {
       } else {
         cardArr[i].style.background = "rgba(224, 33, 33, 1)";
         let message = document.querySelector(".status");
-        message.innerHTML = `You Lost! Try Again <br> <button id="playAgain" type="button">Ok</button>`;
+        message.innerHTML = `You Lost! Try Again <br> <button class="custom-button" id="playAgain" type="button">Ok</button>`;
+        document.getElementsByClassName("status")[0].style.background = "rgba(224, 33, 33, 1)";
+        document.getElementsByClassName("status")[0].style.boxShadow = "0 8px 10px rgb(255, 0, 0)";
+
         document
           .querySelector("#playAgain")
           .addEventListener("click", () => location.reload());

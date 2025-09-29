@@ -1,32 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Heebo:wght@100..900&family=Secular+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(42, 40, 62);
+  font-family: Alkatra;
+  font-size: 40px;
+  color: white;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
-  height: 500px;
-  width: 500px;
+  height: auto;
+  width: 100vw;
   align-items: center;
   justify-content: center;
-  border: black solid 3px;
-  border-radius: 8px;
+  box-shadow: 0 8px 10px rgb(126, 181, 192);
+  border-radius: 20px;
 }
 
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
-  width: 150px;
+  height: 400px;
+  width: 400px;
   margin: 20px;
-  border-radius: 10px;
   border: black solid 1px;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   overflow: hidden;
+  background-color: rgb(126, 181, 192);
+  border-radius: 20px;
 }
 
 a {
@@ -36,4 +47,46 @@ a {
 
 img {
   margin-top: 10px;
+  height: 100%;
 }
+/* #name {
+  text-align: left;
+}
+h1 {
+  font-size: 110px;
+  margin-bottom: 0;
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 55vw;
+  align-items: center;
+  justify-content: center;
+  border: rgb(126, 181, 192) solid 3px;
+  box-shadow: 0 8px 10px rgb(126, 181, 192);
+  border-radius: 20px;
+  margin: 80px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(126, 181, 192);
+  margin: 20px;
+  border-radius: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+}
+h3 {
+  margin: 10px;
+} */
