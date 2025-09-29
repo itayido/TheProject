@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: heebo;
 }
 
 #title {
@@ -65,5 +66,3 @@ input {
   text-align: center;
   font-size: 15px;
 }
-/* font-family: heebo;
-font-family:Secular One; */
