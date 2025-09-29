@@ -5,6 +5,14 @@
 }
 
 body {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(42, 40, 62);
+  font-family: Alkatra;
+  font-size: 40px;
+  color: white;
+}
+.all {
   display: flex;
   flex-direction: column;
   justify-content: center;
