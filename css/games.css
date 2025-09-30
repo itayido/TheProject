@@ -59,44 +59,7 @@ img {
   margin-top: 10px;
   height: 100%;
 }
-/* #name {
-  text-align: left;
-}
-h1 {
-  font-size: 110px;
-  margin-bottom: 0;
-}
-.board {
-  display: flex;
-  flex-wrap: wrap;
-  height: 600px;
-  width: 55vw;
-  align-items: center;
-  justify-content: center;
-  border: rgb(126, 181, 192) solid 3px;
-  box-shadow: 0 8px 10px rgb(126, 181, 192);
-  border-radius: 20px;
-  margin: 80px;
-}
 
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  width: 150px;
-  background-color: rgb(126, 181, 192);
-  margin: 20px;
-  border-radius: 20px;
-  font-size: 50px;
-  text-align: center;
+p {
+  color: white;
 }
-
-h2 {
-  font-size: 50px;
-  text-align: center;
-  margin: 10px;
-}
-h3 {
-  margin: 10px;
-} */

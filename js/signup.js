@@ -1,3 +1,6 @@
+const button = document.getElementById("submit");
+button.addEventListener("click", addToStorage);
+
 function addToStorage(event) {
   const userName = document.getElementById("username").value;
   const password = document.getElementById("password").value;
@@ -19,5 +22,7 @@ function addToStorage(event) {
   };
   usersArray.push(user);
   localStorage.setItem("usersArray", JSON.stringify(usersArray));
+  sessionStorage.setItem("nameShow", " " + user.username);
   alert("User registered successfully!");
+  window.location.href = "../pages/games.html";
 }

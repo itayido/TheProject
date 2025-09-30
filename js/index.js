@@ -8,7 +8,7 @@ function check(event) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].username === userName && arr[i].password === password) {
       alert("Logged in successfully");
-      let currentUser = arr[i].username;
+      sessionStorage.setItem(arr[i].username);
       window.location.href = "./pages/games.html";
       return;
     }
