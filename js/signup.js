@@ -8,10 +8,12 @@ function addToStorage() {
   let usersArray = JSON.parse(localStorage.getItem("usersArray")) || [];
   if (password !== confirmPassword) {
     alert("the passwords aren't the same");
+    return false;
   }
   for (let i = 0; i < usersArray.length; i++) {
     if (usersArray[i].username === userName) {
       alert("This username is already taken");
+      return false;
     }
   }
   const user = {

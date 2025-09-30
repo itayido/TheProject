@@ -24,11 +24,17 @@ function show(c) {
       setTimeout(() => {
         cardArr[j].textContent = " ";
         cardArr[j].style.background = "rgb(126, 181, 192)";
-      }, 500 * c * 0.5);
+      }, 500 * c * 0.75);
     }
   }
 }
 
+SuccessArr = [
+  "You Got It!",
+  "Your'e Doing Amazing Sweetie!",
+  "Keep Going!",
+  "Good Job",
+];
 function guess() {
   button.style.visibility = "hidden";
   let index = 1;
@@ -53,8 +59,15 @@ function guess() {
           index = 1;
           let level = document.getElementById("level");
           level.innerHTML = "Level <br> " + round;
+          let message = document.querySelector(".status");
+          message.innerHTML = SuccessArr[Math.floor(Math.random() * 4)];
+          document.getElementsByClassName("status")[0].style.background =
+            "rgba(58, 249, 6, 1)";
+          document.getElementsByClassName("status")[0].style.boxShadow =
+            "0 8px 10px rgba(58, 249, 6, 1)";
+
           if (round === 16) {
-            let message = document.querySelector(".status");
+            message = document.querySelector(".status");
             message.innerHTML = `You won! <br> <button class="custom-button1" id="playAgain" type="button">Ok</button>`;
             document.getElementsByClassName("status")[0].style.background =
               "rgba(112, 224, 33, 1)";
@@ -79,6 +92,11 @@ function guess() {
         }
       } else {
         cardArr[i].style.background = "rgba(224, 33, 33, 1)";
+        const sfx = new Audio("../fail.mp3");
+        sfx.play().catch((error) => {
+          console.error("", error);
+        });
+        sfx.currentTime = 0;
         let message = document.querySelector(".status");
         message.innerHTML = `You Lost! Try Again <br> <button class="custom-button" id="playAgain" type="button">Ok</button>`;
         document.getElementsByClassName("status")[0].style.background =
@@ -98,5 +116,3 @@ createBoard();
 const button = document.getElementById("start");
 button.addEventListener("click", guess);
 document.getElementById("level");
-
-// guess();
