@@ -37,6 +37,8 @@ function guess() {
   show(round);
   for (let i = 0; i < cardArr.length; i++) {
     cardArr[i].addEventListener("click", () => {
+      cardArr[i].style.height ="155px";
+      cardArr[i].style.width ="155px";
       if (gameOver) return;
 
       cardArr[i].textContent = cardArr[i].dataset.number;
@@ -44,11 +46,12 @@ function guess() {
       if (parseInt(cardArr[i].dataset.number) === index) {
         cardArr[i].style.background = "rgba(58, 249, 6, 1)";
         index++;
-        let level = document.getElementById("level");
-          level.innerHTML = "level <br> "+ round;
+        
         if (index > round) {
           round++;
           index = 1;
+          let level = document.getElementById("level");
+          level.innerHTML = "Level <br> "+ round;
           if (round === 16) {
             let message = document.querySelector(".status");
             message.innerHTML = `You won! <br> <button class="custom-button1" id="playAgain" type="button">Ok</button>`;
@@ -64,6 +67,8 @@ function guess() {
             cardArr.forEach((card) => {
               card.style.background = "rgb(126, 181, 192)";
               card.textContent = " ";
+              card.style.width ="150px";
+              card.style.height ="150px";
             });
           }, 300);
 
