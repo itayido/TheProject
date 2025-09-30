@@ -3,7 +3,8 @@ function createBoard() {
   numberArr.sort(() => Math.random() - 0.5);
   console.log(numberArr);
   const board = document.getElementsByClassName("board")[0];
-
+  nameShow = document.getElementById("name");
+  nameShow.innerHTML += sessionStorage.getItem("nameShow");
   for (let i = 0; i < numberArr.length; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
@@ -37,8 +38,8 @@ function guess() {
   show(round);
   for (let i = 0; i < cardArr.length; i++) {
     cardArr[i].addEventListener("click", () => {
-      cardArr[i].style.height ="155px";
-      cardArr[i].style.width ="155px";
+      cardArr[i].style.height = "155px";
+      cardArr[i].style.width = "155px";
       if (gameOver) return;
 
       cardArr[i].textContent = cardArr[i].dataset.number;
@@ -46,17 +47,19 @@ function guess() {
       if (parseInt(cardArr[i].dataset.number) === index) {
         cardArr[i].style.background = "rgba(58, 249, 6, 1)";
         index++;
-        
+
         if (index > round) {
           round++;
           index = 1;
           let level = document.getElementById("level");
-          level.innerHTML = "Level <br> "+ round;
+          level.innerHTML = "Level <br> " + round;
           if (round === 16) {
             let message = document.querySelector(".status");
             message.innerHTML = `You won! <br> <button class="custom-button1" id="playAgain" type="button">Ok</button>`;
-            document.getElementsByClassName("status")[0].style.background = "rgba(112, 224, 33, 1)";
-        document.getElementsByClassName("status")[0].style.boxShadow = "0 8px 10px rgba(111, 255, 0, 1)";
+            document.getElementsByClassName("status")[0].style.background =
+              "rgba(112, 224, 33, 1)";
+            document.getElementsByClassName("status")[0].style.boxShadow =
+              "0 8px 10px rgba(111, 255, 0, 1)";
             document
               .querySelector("#playAgain")
               .addEventListener("click", () => location.reload());
@@ -67,8 +70,8 @@ function guess() {
             cardArr.forEach((card) => {
               card.style.background = "rgb(126, 181, 192)";
               card.textContent = " ";
-              card.style.width ="150px";
-              card.style.height ="150px";
+              card.style.width = "150px";
+              card.style.height = "150px";
             });
           }, 300);
 
@@ -78,8 +81,10 @@ function guess() {
         cardArr[i].style.background = "rgba(224, 33, 33, 1)";
         let message = document.querySelector(".status");
         message.innerHTML = `You Lost! Try Again <br> <button class="custom-button" id="playAgain" type="button">Ok</button>`;
-        document.getElementsByClassName("status")[0].style.background = "rgba(224, 33, 33, 1)";
-        document.getElementsByClassName("status")[0].style.boxShadow = "0 8px 10px rgb(255, 0, 0)";
+        document.getElementsByClassName("status")[0].style.background =
+          "rgba(224, 33, 33, 1)";
+        document.getElementsByClassName("status")[0].style.boxShadow =
+          "0 8px 10px rgb(255, 0, 0)";
 
         document
           .querySelector("#playAgain")
@@ -90,8 +95,8 @@ function guess() {
   }
 }
 createBoard();
-const button= document.getElementById("start");
-button.addEventListener("click",guess)
+const button = document.getElementById("start");
+button.addEventListener("click", guess);
 document.getElementById("level");
 
 // guess();
