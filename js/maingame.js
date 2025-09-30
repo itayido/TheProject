@@ -98,7 +98,7 @@ function guess() {
         });
         sfx.currentTime = 0;
         let message = document.querySelector(".status");
-        message.innerHTML = `You Lost! Try Again <br> <button class="custom-button" id="playAgain" type="button">Ok</button>`;
+        message.innerHTML = `You Lost!<br> <button class="custom-button" id="playAgain" type="button">Try Again</button>`;
         document.getElementsByClassName("status")[0].style.background =
           "rgba(224, 33, 33, 1)";
         document.getElementsByClassName("status")[0].style.boxShadow =
