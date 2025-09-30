@@ -7,7 +7,7 @@
 body {
   justify-content: center;
   align-items: center;
-  background-color: rgb(42, 40, 62);
+  background-color: rgb(20, 18, 40);
   font-family: Alkatra;
   font-size: 40px;
   color: white;
@@ -17,17 +17,38 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(42, 40, 62);
+  background-color: rgb(20, 18, 40);
   font-family: Alkatra;
   font-size: 40px;
   color: white;
 }
-.userData {
-  display: flex;
-}
 #name {
   text-align: left;
   align-content: flex-start;
+}
+#down {
+  display: flex;
+  gap: 180px;
+  margin: 80px;
+}
+#start {
+  color: white;
+  margin-top: 15%;
+  height: 100px;
+  width: 8vw;
+  flex: 1;
+  border: rgb(126, 181, 192) solid 3px;
+  box-shadow: 0 8px 10px rgb(126, 181, 192);
+
+  background-image: url("https://images.pexels.com/photos/19378034/pexels-photo-19378034.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  font-size: 25px;
+}
+#level {
+  /* margin: 80px; */
+  flex: 1;
 }
 h1 {
   font-size: 110px;
@@ -36,6 +57,7 @@ h1 {
 .board {
   display: flex;
   flex-wrap: wrap;
+  flex: 9;
   height: 600px;
   width: 55vw;
   align-items: center;
@@ -43,7 +65,10 @@ h1 {
   border: rgb(126, 181, 192) solid 3px;
   box-shadow: 0 8px 10px rgb(126, 181, 192);
   border-radius: 20px;
-  margin: 80px;
+  /* margin: 80px; */
+  background-image: url("https://images.pexels.com/photos/19378034/pexels-photo-19378034.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .card {

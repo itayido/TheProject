@@ -3,6 +3,7 @@ function createBoard() {
   numberArr.sort(() => Math.random() - 0.5);
   console.log(numberArr);
   const board = document.getElementsByClassName("board")[0];
+
   for (let i = 0; i < numberArr.length; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
@@ -28,6 +29,7 @@ function show(c) {
 }
 
 function guess() {
+  button.style.visibility = "hidden";
   let index = 1;
   let round = 1;
   let gameOver = false;
@@ -42,11 +44,11 @@ function guess() {
       if (parseInt(cardArr[i].dataset.number) === index) {
         cardArr[i].style.background = "rgba(58, 249, 6, 1)";
         index++;
-
+        let level = document.getElementById("level");
+          level.innerHTML = "level <br> "+ round;
         if (index > round) {
           round++;
           index = 1;
-
           if (round === 16) {
             let message = document.querySelector(".status");
             message.innerHTML = `You won! <br> <button class="custom-button1" id="playAgain" type="button">Ok</button>`;
@@ -83,4 +85,8 @@ function guess() {
   }
 }
 createBoard();
-guess();
+const button= document.getElementById("start");
+button.addEventListener("click",guess)
+document.getElementById("level");
+
+// guess();
