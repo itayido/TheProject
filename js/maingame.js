@@ -85,14 +85,19 @@ function guess() {
               card.textContent = " ";
               card.style.width = "150px";
               card.style.height = "150px";
+              message.innerHTML = "";
+              document.getElementsByClassName("status")[0].style.background =
+                "transparent";
+              document.getElementsByClassName("status")[0].style.boxShadow =
+                "none";
             });
-          }, 300);
+          }, 1000);
 
           setTimeout(() => show(round), 1000);
         }
       } else {
         cardArr[i].style.background = "rgba(224, 33, 33, 1)";
-        const sfx = new Audio("../fail.mp3");
+        const sfx = new Audio("../media/fail.mp3");
         sfx.play().catch((error) => {
           console.error("", error);
         });
