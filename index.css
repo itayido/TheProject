@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Fjalla+One&family=Heebo:wght@100..900&family=Secular+One&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Heebo:wght@100..900&family=Secular+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: heebo;
+  font-family: Heebo;
 }
 
 #title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 body {
@@ -19,8 +21,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(42, 40, 62);
+  background-color: rgb(20, 18, 40);
   font-family: Arial, sans-serif;
+  font-size: 40px;
 }
 
 .form {
@@ -31,7 +34,7 @@ body {
   flex-direction: column;
   gap: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-  width: 400px;
+  width: 520px;
 }
 
 .form-part {
@@ -43,7 +46,7 @@ body {
 
 .form-part label {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 input {
@@ -54,15 +57,17 @@ input {
   background-color: rgb(86, 240, 86);
   padding: 5px;
   margin: 5px;
+  font-size: 25px;
 }
 
 #reset {
   background-color: rgb(252, 60, 60);
   padding: 5px;
   margin: 5px;
+  font-size: 25px;
 }
 
 #account {
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
 }
